@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="index.css" /> -->
+  <title>Assignment</title>
+</head>
+<style>
+  * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(231, 228, 228);
+  }
+
+
+  .nav .logo i {
+    margin: 5px 1px 10px 10px;
+    border: 1px solid rgb(218, 213, 213);
+    padding: 9px 2px 0px 5px;
+  }
+
+  .nav .all-icon i {
+    margin: 13px 14px;
+  }
+
+  .nav .all-icon .account {
+    margin: 5px 20px 5px 2px;
+  }
+
+  .nav .all-icon .icon-data {
+    display: flex;
+  }
+
+  .all-icon h3 {
+    font-weight: 300;
+  }
+
+  .all-icon h5 {
+    font-weight: 100;
+  }
+
+  .nav .logo {
+    display: flex;
+  }
+
+  .nav .logo img {
+    width: 20%;
+    height: 50px;
+  }
+
+  .nav .logo input {
+    margin: 5px 0px 5px 0px;
+    border: 1px solid rgb(218, 213, 213);
+    width: 150%;
+    /* background-color: rgb(168, 131, 74); */
+    height: 35px;
+    padding: 1px 200px 1px 8px;
+
+  }
+
+  .secondLine {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first-icons {
+    justify-content: space-around;
+    font-weight: 100;
+    margin-left: 50px;
+    /* padding: auto 40px;background-color: aqua; */
+    display: flex;
+  }
+
+  .first-icons i {
+    margin: 8px;
+  }
+
+  .first-icons h4 {
+    margin: 8px 5px 2px;
+  }
+
+  .order input {
+    background-color: rgb(115, 115, 194);
+    padding: 5px 20px;
+    color: white;
+    margin: 5px 20px 5px 0px;
+    border: none;
+
+  }
+
+  /* +++++++++++++++++++++++++++++++++++++++++++2nd Sides++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .side-icons {
+    background-color: rgb(227, 230, 230);
+    width: 100%;
+    height: 84vh;
+  }
+
+  .side-icons {
+    display: flex;
+  }
+
+  .side-icons i {
+    margin: 15px;
+  }
+
+  .side-allicon {
+    display: flex;
+    background-color: white;
+    width: 5%;
+    height: 84vh;
+    padding: 0% 6px;
+    flex-direction: column;
+    /* margin: 10px 0px; */
+  }
+
+  .clotheSection {
+    width: 100%;
+    height: 80px;
+
+    /* background-color: aquamarine; */
+  }
+
+  .searchIcons {
+    justify-content: space-between;
+    width: 80%;
+    background-color: white;
+    margin: 10px;
+  }
+
+  .firstSearch {
+    margin: 10px;
+
+
+  }
+
+  .searchIcons .firstSearch .firstinput {
+    padding: 5px 10px;
+    margin: 0px 0px 0px 5px;
+
+  }
+
+  .searchIcons .firstSearch i {
+    margin: 5px 2px 5px 2px;
+  }
+
+  .searchIcons .firstSearch .btn {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+
+  .searchIcons .firstSearch .Add {
+    padding: 5px 10px;
+  }
+
+  .searchIcons {
+    display: flex;
+  }
+
+  .secondSearch {
+    display: flex;
+  }
+
+  .secondSearch h3 {
+
+    padding: 10px 5px;
+  }
+
+  .secondSearch p {
+    border: 1px solid black;
+    margin: 10px 10px;
+    padding: 4px 10px 1px 10px;
+  }
+
+  .boxing {
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .boxing .card {
+    width: 15.8%;
+    height: 360px;
+    margin: 2px 2px;
+    background-color: white;
+  }
+
+  .boxing .card img {
+    width: 100%;
+    height: 140px;
+  }
+
+  .boxing .card .colorbox {
+    display: flex;
+  }
+
+  .boxing .card .colorbox p {
+    border: 1px solid black;
+    margin: 5px 10px;
+    padding: 1px 4px;
+    font-size: 12px;
+  }
+
+  .boxing .card span {
+    font-size: smaller;
+    margin: 2px 8px;
+  }
+
+  .boxing .card h3 {
+    font-size: 15px;
+    font-weight: 100;
+    margin: 5px 10px;
+  }
+
+  .boxing .card h2 {
+    font-size: 17px;
+    margin: 5px 10px;
+  }
+
+  .card input {
+    padding: 1px 1px;
+    font-size: 9px;
+    margin: 5px 5px;
+  }
+
+
+  .deletbtn input {
+    padding: 7px 20px 7px 20px;
+    /* margin: 1px 2px ; */
+  }
+
+  .deletbtn i {
+    margin: 2px 1px 1px 1px;
+    border: 1px solid black;
+    padding: 3px 8px;
+  }
+</style>
+
+<body>
+
+
+  <div class="nav">
+
+
+    <div class="logo">
+
+
+      <img
+        src="https://media.licdn.com/dms/image/C4D0BAQEjJSUg5CshLw/company-logo_200_200/0/1654584404366/supplymint_logo?e=2147483647&v=beta&t=ogXGMgyX5eNivVtuy0Ym-hu-efeThUzolQ7HuNKw6kI"
+        alt="" />
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="search" placeholder="Search POs, ASNs & pages etc." />
+
+    </div>
+
+    <div class="all-icon">
+      <div class="icon-data">
+        <i class="fa-solid fa-question"></i>
+        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-message"></i>
+        <i class="fa-solid fa-bell"></i>
+        <i id="id-icon" class="fa-solid fa-id-badge"></i>
+        <div class="account">
+          <h3>Vmart-procupment Team</h3>
+          <h5>Ashish Kumar Singa</h5>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="secondLine">
+    <div class="first-icons">
+      <i class="fa-solid fa-house"></i>
+      <h4>Home /</h4>
+      <h4>Sales Order</h4>
+      <i class="fa-solid fa-caret-down"></i>
+      <h4>/Product Catalogs</h4>
+
+    </div>
+    <div class="order">
+      <input type="button" value="PLACE ORDER">
+    </div>
+  </div>
+
+
+
+  <div class="side-icons">
+
+    <div class="side-allicon">
+
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-person"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-calendar-days"></i>
+      <i class="fa-solid fa-truck"></i>
+      <i class="fa-solid fa-box"></i>
+      <i class="fa-solid fa-database"></i>
+      <i class="fa-solid fa-person-breastfeeding"></i>
+      <i class="fa-regular fa-note-sticky"></i>
+      <i class="fa-regular fa-clipboard"></i>
+      <i class="fa-solid fa-arrow-up-right-dots"></i>
+
+    </div>
+
+
+    <div class="clotheSection">
+
+      <div class="searchIcons">
+        <div class="firstSearch">
+          <input class="firstinput" type="search" placeholder="Search Products">
+          <i class="fa-solid fa-dice-four"></i>
+          <i class="fa-solid fa-server"></i>
+          <i class="fa-solid fa-box-archive"></i>
+
+          <input class="btn" type="button" value="Add Remarks">
+          <input class="btn" type="button" value="Show by: Size">
+          <input class="Add" type="button" value="+" name="" id="">
+
+        </div>
+
+
+        <div class="secondSearch">
+          <i class="fa-solid fa-qrcode"></i>
+          <h3>Scan Product by..</h3>
+          <p>Design No</p>
+          <i class="fa-solid fa-gear"></i>
+
+        </div>
+      </div>
+
+
+      <div class="boxing">
+
+        <div class="card">
+          <img
+            src="https://images.rawpixel.com/image_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNjMtZTA1LmpwZw.jpg"
+            alt="">
+
+          <div class="colorbox">
+            <p style="border: 1px solid orange;">Musterd Yellow</p>
+            <p>Multiplier : 5</p>
+          </div>
+          <span>item Name</span>
+          <h3>Mens White Check Shirt regular fit</h3>
+          <span>Design Number</span>
+          <span>DN098234839</span>
+          <input type="button" value="XL">
+          <input type="button" value="Instock : 100">
+          <h2>Rs 799.67</h2>
+          <div class="deletbtn">
+            <i class="fa-solid fa-trash"></i>
+            <input type="button" value="XL  +5More">
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+
+        </div>
+        <div class="card">
+          <img
+            src="https://images.rawpixel.com/image_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNjMtZTA1LmpwZw.jpg"
+            alt="">
+          <div class="colorbox">
+            <p style="border: 1px solid orange;">Musterd Yellow</p>
+            <p>Multiplier : 5</p>
+          </div>
+          <span>item Name</span>
+          <h3>Mens White Check Shirt regular fit</h3>
+          <span>Design Number</span>
+          <span>DN098234839</span>
+          <input type="button" value="XL">
+          <input type="button" value="Instock : 100">
+          <h2>Rs 799.67</h2>
+          <div class="deletbtn">
+            <i class="fa-solid fa-trash"></i>
+            <input type="button" value="XL  +5More">
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.rawpixel.com/image_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNjMtZTA1LmpwZw.jpg"
+            alt="">
+          <div class="colorbox">
+            <p style="border: 1px solid orange;">Musterd Yellow</p>
+            <p>Multiplier : 5</p>
+
+          </div>
+          <span>item Name</span>
+          <h3>Mens White Check Shirt regular fit</h3>
+          <span>Design Number</span>
+          <span>DN098234839</span>
+          <input type="button" value="XL">
+          <input type="button" value="Instock : 100">
+          <h2>Rs 799.67</h2>
+          <div class="deletbtn">
+            <i class="fa-solid fa-trash"></i>
+            <input type="button" value="XL  +5More">
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.rawpixel.com/image_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNjMtZTA1LmpwZw.jpg"
+            alt="">
+          <div class="colorbox">
+            <p style="border: 1px solid orange;">Musterd Yellow</p>
+            <p>Multiplier : 5</p>
+          </div>
+          <span>item Name</span>
+          <h3>Mens White Check Shirt regular fit</h3>
+          <span>Design Number</span>
+          <span>DN098234839</span>
+          <input type="button" value="XL">
+          <input type="button" value="Instock : 100">
+          <h2>Rs 799.67</h2>
+          <div class="deletbtn">
+            <i class="fa-solid fa-trash"></i>
+            <input type="button" value="XL  +5More">
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.rawpixel.com/image_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNjMtZTA1LmpwZw.jpg"
+            alt="">
+          <div class="colorbox">
+            <p style="border: 1px solid orange;">Musterd Yellow</p>
+            <p>Multiplier : 5</p>
+          </div>
+          <span>item Name</span>
+          <h3>Mens White Check Shirt regular fit</h3>
+          <span>Design Number</span>
+          <span>DN098234839</span>
+          <input type="button" value="XL">
+          <input type="button" value="Instock : 100">
+          <h2>Rs 799.67</h2>
+          <div class="deletbtn">
+            <i class="fa-solid fa-trash"></i>
+            <input type="button" value="XL  +5More">
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
